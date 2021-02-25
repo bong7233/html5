@@ -303,6 +303,21 @@ a{
 .member-service .icon-right-open{
   color: #ce4827;
 }
+
+.validation-list{
+  margin: 25px 0 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.validation-list a{
+  display: block;
+  padding: 5px 45px;
+  background : url(./images/validation_icon.png) no-repeat 15px 50%,
+  linear-gradient(180deg, #ccc, #eee);
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 10px;
+}
 .slogan{
   background-color: lightgreen;
   height: 10vh;
