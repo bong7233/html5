@@ -318,6 +318,51 @@ a{
   border-radius: 10px;
   margin-top: 10px;
 }
+.validation-list a:hover{
+  color: red;
+}
+
+.term{
+  padding: 0 20px;
+  background-color: #ccc;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.term-list{
+  display: inline-block;
+  margin: 0;
+  width :200px;
+  padding-bottom: 20px;
+}
+
+/* 첫번째텀 */
+dt:nth-of-type(1){
+  float: right;
+  width: 120px;
+  padding-bottom: 5px;
+}
+dt:nth-of-type(2){
+  float: left;
+  width: 120px;
+  padding-bottom: 5px;
+}
+dd:nth-of-type(1).term-list-brief{
+  width: 160px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+.term-list-thumbnail{
+  float: left;
+  margin-left: 5px;
+  padding-right: 15px;
+}
+dd:nth-of-type(4){
+  float: right;
+  margin-left: 5px;
+  padding-right: 15px;
+
+}
 .slogan{
   background-color: lightgreen;
   height: 10vh;
