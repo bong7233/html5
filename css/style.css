@@ -321,7 +321,7 @@ a{
   padding: 5px 45px;
   background : url(./images/validation_icon.png) no-repeat 15px 50%,
   linear-gradient(180deg, #ccc, #eee);
-  border: 3px solid black;
+  border: 1px solid var(--silver);
   border-radius: 10px;
   margin-top: 10px;
 }
@@ -422,7 +422,6 @@ a{
 }
 /* 공지사항,자료실 */
 .board{
-  background-color: yellow;
   position: relative;
   padding-top: 45px;
   margin-top: 20px;
@@ -462,13 +461,11 @@ a{
   list-style-type: none;
   padding-left: 0;
   margin: 0;
-  background-color: skyblue;
 }
 .notice-list li, .pds-list li{
   display: flex;
 }
 .notice-list a, .pds-list a{
-  background-color: lightgreen;
   /* flex-grow: 1; */
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -477,7 +474,7 @@ a{
 
 }
 .notice-list time, .pds-list time{
-  /* width: 150px; */
+  padding-left: 40px;
 }
 .notice-more, .pds-more{
   position: absolute;
