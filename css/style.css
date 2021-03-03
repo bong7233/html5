@@ -591,7 +591,32 @@ a{
   margin: 0 0 10px 0;
 }
 .related{
-  background-color: pink;
+  padding: 10px;
+}
+.related-list{
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  border: 1px solid var(--silver);
+  border-radius: 3px;
+  background-color: white;
+  height: 27px;  
+  overflow: hidden;
+  transition-property: all;
+  transition-duration: 0.4s;
+}
+.related-list a{
+  display: block;
+  line-height: 25px;
+  text-indent: 2em;
+}
+.related-list:hover{
+  height: 147px;
+  padding: 10px 0;
+}
+.related-list a:focus{
+  outline: 1px solid darkblue;
+  outline-offset: -5px;
 }
 /* 슬로건 */
 .slogan{
