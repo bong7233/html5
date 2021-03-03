@@ -586,7 +586,7 @@ a{
 .btn-event-next{
   background-position: -36px 0 !important;
 }
-.event-heading, .related-heading{
+.section-heading{
   font-size: 1.5rem;
   margin: 0 0 10px 0;
 }
@@ -617,6 +617,65 @@ a{
 .related-list a:focus{
   outline: 1px solid darkblue;
   outline-offset: -5px;
+}
+/* 인기사이트 */
+.favorite{
+  position: relative;
+  margin-top: 15px;
+  background:#ccc linear-gradient(180deg, #ccc, #eee);
+  border: 1px solid var(--silver);
+  border-radius: 3px;
+  padding: 0 10px;
+}
+.favorite-heading span{
+  color: red;
+}
+.favorite-list{
+  margin: 0;
+  padding-left: 0px;
+  list-style-type: none;
+}
+.favorite-list li{
+  counter-increment: number;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+}
+.favorite-list li::before{
+  content: counter(number);
+  color: #fff;
+  background-color: #aaa;
+  border-radius: 3px;
+  padding: 2px 5px;
+  margin-right: 5px;
+}
+.favorite-list a{
+  flex-grow: 1;
+}
+.favorite-list .up,.favorite-list .down,.favorite-list .stop{
+  font-style: normal;
+  width: 9px;
+  height: 11px;
+  text-indent: 9px;
+  overflow: hidden;
+  white-space: nowrap;
+  background-image: url(./images/rank.png);
+  background-repeat: no-repeat;
+}
+.favorite-list .down{
+  background-position: 0 100%;
+}
+.favorite-list .stop{
+  background-position: 0 50%;
+}
+.favorite-more{
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  padding: 8px;
+}
+.favorite-more::before{
+  color: darkgreen;
 }
 /* 슬로건 */
 .slogan{
