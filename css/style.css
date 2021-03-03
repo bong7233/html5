@@ -709,11 +709,10 @@ a{
 /* .slogan-content q{
   quotes: "[[" "]]";
 } */
-
 .slogan-content q::before{
   font-style: 3.6rem;
   position: relative;
-  top: 15px;
+  top: -5px;
 }
 .slogan-content q::after{
   content: "";
